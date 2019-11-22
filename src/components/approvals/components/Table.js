@@ -6,19 +6,6 @@ import axios from "axios";
 const Table = ({ load }) => {
   const [tableData, setTableData] = useState([]);
 
-  const getColumnWidth = (data, accessor, headerText) => {
-    if (typeof accessor === "string" || accessor instanceof String) {
-      accessor = d => d[accessor]; // eslint-disable-line no-param-reassign
-    }
-    const maxWidth = 600;
-    const magicSpacing = 25;
-    const cellLength = Math.max(
-      ...data.map(row => (`${accessor(row)}` || "").length),
-      headerText.length
-    );
-    return Math.min(maxWidth, cellLength * magicSpacing);
-  };
-
   useEffect(() => {
     axios
       .get("https://lq-time-tracking.firebaseio.com/approvals.json")

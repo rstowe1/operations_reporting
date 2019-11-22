@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Container, Row, Col } from "reactstrap";
+import React from "react";
+import { Container, Row } from "reactstrap";
 
 import Form from "./components/Form";
 import Table from "./components/Table";

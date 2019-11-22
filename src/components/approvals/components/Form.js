@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import axios from "axios";
 
-const Form = ({}) => {
+const Form = () => {
   const formik = useFormik({
     initialValues: {
       client: "",
