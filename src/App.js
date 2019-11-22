@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment, useState } from "react";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
+  const [comment, setComment] = useState("");
+  const [date, setDate] = useState("");
+  const [name, setName] = useState("");
+  const [load, setLoad] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header
+        comment={comment}
+        setComment={setComment}
+        date={date}
+        setDate={setDate}
+        name={name}
+        setName={setName}
+        load={load}
+        setLoad={setLoad}
+      />
+    </Fragment>
   );
-}
+};
 
 export default App;
