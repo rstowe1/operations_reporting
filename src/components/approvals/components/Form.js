@@ -38,6 +38,10 @@ const Form = () => {
         <option value="Patrick">Patrick</option>
         <option value="Jennifer">Jennifer</option>
         <option value="Dan">Dan</option>
+        <option value="David">David</option>
+        <option value="Devin">Devin</option>
+        <option value="Will">Will</option>
+        <option value="Carl">Carl</option>
       </select>
       <label htmlFor="date">Date</label>
       <input
